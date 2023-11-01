@@ -4,210 +4,299 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Our Services</title>
+    <title>About Us</title>
 </head>
 <body>
-  <nav>
-    <div class="logo">
-        <h2>Easy Transporters</h2>
-    </div>
-
-  </nav>
-
-  <div class="hero">
-    <div class="container">
-        <h1>A Carrier you can <br>trust</h1>
-        <div class="btn">
-            <a href="#">Request a Quote</a>
+    <section id="main">
+        <nav>
+            <a href="#" class="logo"><img src="https://drive.google.com/uc?export=view&id=1jp5hn5nHcSe7Fs4AtdLiVYf7eSOF7s3b" alt="Logo"></a>
+            <div class="toggle"></div>
+            <ul class="menu">
+                <li><a href="#" class="lang">En</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section id="about">
+        <div class="about-text">
+            <h1>About Us</h1>
+            <h2>Best Delivery Service</h2>
+            <p>Reliable, Fast, and Customer-friendly</p>
+            <button>View More Details</button>
         </div>
-    </div>
-  </div>
-  <div class="wrapper">
-    <div class="inner-wrapper">
-        <h1>Who are we?</h1>
-        <p>J.A.I Logistics Services is a specialized logistics company dedicated to providing top-quality transportation, receiving, and storage solutions for a wide range of goods. Our mission is to offer efficient, reliable, and cost-effective services to businesses of all sizes, optimizing their supply chain management.</p>
-    </div>
-    <div class="about">
-        <div class="col-6">
-            <img src="https://images.pexels.com/photos/6169660/pexels-photo-6169660.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+    </section>
+    <section id="services">
+        <div class="s-heading">
+            <h1>Services</h1>
+            <p>Here Are Some Services We Provide to Our Customers</p>
         </div>
-        <div class="col-6">
-           <div class="desc">
-            <h1>Our Services</h1>
-            <p>J.A.I Logistics Services is a specialized logistics company dedicated to providing top-quality transportation, receiving, and storage solutions for a wide range of goods. Our mission is to offer efficient, reliable, and cost-effective services to businesses of all sizes, optimizing their supply chain management.</p>
-           </div>
-        </div>
-    </div>
-    <div class="about">
-        <div class="col-6">
-            <img src="https://images.pexels.com/photos/6169668/pexels-photo-6169668.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
-        </div>
-        <div class="col-6">
-           <div class="desc">
-            <h1>Follow Us</h1>
-            <p>J.A.I Logistics Services is a specialized logistics company dedicated to providing top-quality transportation, receiving, and storage solutions for a wide range of goods. Our mission is to offer efficient, reliable, and cost-effective services to businesses of all sizes, optimizing their supply chain management.</p>
-           </div>
-           <div class="btn">
-                <a href="#">Follow Us</a>
+        <div class="b-container">
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Delivery</div>
+                    <img src="https://images.pexels.com/photos/6170413/pexels-photo-6170413.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Delivery Image">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">At J.A.I Logistics, we offer fast, reliable, and top-notch delivery services at customer-friendly rates.</a>
+                </div>
+            </div>
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Tracking</div>
+                    <img src="https://images.pexels.com/photos/6946139/pexels-photo-6946139.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Tracking Image">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">At J.A.I Logistics, we offer a tracking system for real-time location tracking of your goods and packages.</a>
+                </div>
+            </div>
+            <div class="s-box">
+                <div class="s-b-img">
+                    <div class="s-type">Customer <br> Service</div>
+                    <img src="https://images.pexels.com/photos/5239913/pexels-photo-5239913.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Customer Service Image">
+                </div>
+                <div class="s-b-text">
+                    <a href="#">At J.A.I Logistics, we offer friendly agents and fast customer services for all complaints and requirements.</a>
+                </div>
             </div>
         </div>
-    </div>
-  </div>
-  <style>
-    * {
+    </section>
+    <style>
+        * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
+/* Set a background color for the entire body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #080808;
+    font-family: Calibri, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+}
+
+/* Header section styles */
+#main {
+    width: 100%;
+    height: 40vh;
+    background-color: #e0751c;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 70px;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.05);
+    z-index: 1;
+    border-radius: 50px;
 }
 
 nav {
     display: flex;
-    background-color: azure;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 0;
 }
 
-.logo {
-    padding: 15px;
-}
-
-nav ul {
-    list-style: none;
+.menu {
     display: flex;
+    list-style: none;
 }
 
-nav ul li {
+.menu li {
     margin-right: 20px;
 }
 
-nav ul li a {
+.menu li a {
+    color: #f8f8fa;
     text-decoration: none;
-    color: #000;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+
+.lang {
+    color: #f3ecec;
+}
+
+.logo {
+    margin-right: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+}
+
+.toggle {
+    display: none;
+}
+
+.menu li a:hover, .lang:hover {
+    background-color: #292929;
+    color: #fff;
     font-weight: bold;
+    transition: all ease 0.4s;
 }
 
-nav ul li a:hover {
-    color: #058283;
-}
-
-.hero {
-   background-image: url("https://media.istockphoto.com/id/1291987564/photo/long-haul-semi-truck-on-a-two-way-highway.jpg?s=612x612&w=0&k=20&c=D6wp4TEAXTTuT0Vqx7AI812xLA6PzQpYzJTfcCogyAE=");
-    height: 100vh;
-    background-position: center;
-    background-size: cover;
+/* About section styles */
+#about {
+    width: 100%;
+    height: 55vh;
+    background-color: #161616;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: #fff;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
-.container {
-    width: 80%;
-    text-align: center;
-}
-
-.container h1 {
-    font-size: 36px;
-}
-
-.btn {
-    background: #058283;
-    padding: 10px 20px;
-    border-radius: 30px;
-}
-
-.btn a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.btn:hover {
-    background-color: #058283;
-}
-
-.wrapper {
-    background: #058283;;
-    color: #fff;
-    padding: 20px;
-}
-
-.inner-wrapper {
-    width: 80%;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.about {
-    width: 80%;
-    margin: 0 auto;
-    padding-top: 50px;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.about img {
-    width: 100%;
-}
-
-.col-6 {
+.about-text {
     width: 50%;
 }
 
-.desc {
-    padding-left: 20px;
+.about-text h1 {
+    font-size: 5rem;
+    color: #e0751c;
+    margin: 0;
 }
 
-.desc h1 {
-    padding: 20px;
+.about-text h2 {
+    font-size: 3rem;
+    color: #fff;
+    font-weight: 400;
+    margin: 0;
 }
 
-footer {
-    padding: 50px 0;
+.about-text p {
+    font-size: 1.2rem;
+    color: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+}
+
+.about-text button {
+    width: 180px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background-color: #e0751c;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.about-text button:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all ease 0.3s;
+}
+
+/* Services section styles */
+#services {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #e0751c;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
 }
 
-.inner-footer {
-    font-size: 22px;
+.s-heading h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin: 0;
 }
 
-.social {
-    font-size: 30px;
-    padding-right: 10px;
+.s-heading p {
+    color: #fff;
+    font-size: 1rem;
+    margin: 20px 0;
 }
 
-.social:hover {
-    color:#058283;
+.s-box {
+    background-color: #2b2b2b;
+    width: 350px;
+    height: 500px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: transform 0.3s;
+    overflow: hidden;
 }
 
-@media (max-width: 768px) {
-    .container {
-        width: 90%;
-    }
+.b-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
 
-    .inner-wrapper {
-        width: 90%;
-    }
+.s-b-img {
+    width: 100%;
+    height: 70%;
+}
 
-    .about {
-        flex-direction: column;
-    }
+.s-b-img img {
+    width: 100%;
+    height: 100%;
+}
 
-    .col-6 {
-        width: 100%;
-        text-align: center;
-    }
+.s-b-text {
+    width: 100%;
+    height: 30%;
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
 
-    .about img {
-        width: 100%;
+.s-b-text a {
+    margin: 0;
+    color: #fff;
+    font-size: 1.1rem;
+    display: block;
+    display: -webkit-box;
+    max-width: 80%;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+}
+
+.s-b-text a:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.s-type {
+    color: #fff;
+    background-color: #151515;
+    padding: 10px 15px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.s-box:hover {
+    transform: translateY(-10px);
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
     }
 }
-  </style>
+
+@media (min-width: 1024px) {
+    body {
+        font-size: 20px;
+    }
+}
+    </style>
 </body>
 </html>
