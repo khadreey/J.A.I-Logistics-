@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Our Services</title>
+</head>
+<body>
+  <nav>
+    <div class="logo">
+        <h2>Easy Transporters</h2>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="hero">
+    <div class="container">
+        <h1>A Carrier you can <br>trust</h1>
+        <div class="btn">
+            <a href="#">Request a Quote</a>
+        </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="inner-wrapper">
+        <h1>Who are we?</h1>
+        <p>J.A.I Logistics Services is a specialized logistics company dedicated to providing top-quality transportation, receiving, and storage solutions for a wide range of goods. Our mission is to offer efficient, reliable, and cost-effective services to businesses of all sizes, optimizing their supply chain management.</p>
+    </div>
+    <div class="about">
+        <div class="col-6">
+            <img src="https://media.istockphoto.com/id/1465157700/photo/brightly-red-colored-semi-truck-speeding-on-a-two-lane-highway-with-cars-in-background-under.jpg?s=612x612&w=0&k=20&c=cfbbPy2ylvFGRULNLGO_Ucm-C5DsOJMFHiZBdKGsq3c=" alt="">
+        </div>
+        <div class="col-6">
+           <div class="desc">
+            <h1>Our Services</h1>
+            <p>J.A.I Logistics Services is a specialized logistics company dedicated to providing top-quality transportation, receiving, and storage solutions for a wide range of goods. Our mission is to offer efficient, reliable, and cost-effective services to businesses of all sizes, optimizing their supply chain management.</p>
+           </div>
+        </div>
+    </div>
+    <div class="about">
+        <div class="col-6">
+            <img src="https://media.istockphoto.com/id/1465157700/photo/brightly-red-colored-semi-truck-speeding-on-a-two-lane-highway-with-cars-in-background-under.jpg?s=612x612&w=0&k=20&c=cfbbPy2ylvFGRULNLGO_Ucm-C5DsOJMFHiZBdKGsq3c=" alt="">
+        </div>
+        <div class="col-6">
+           <div class="desc">
+            <h1>Follow Us</h1>
+            <p>J.A.I Logistics Services is a specialized logistics company dedicated to providing top-quality transportation, receiving, and storage solutions for a wide range of goods. Our mission is to offer efficient, reliable, and cost-effective services to businesses of all sizes, optimizing their supply chain management.</p>
+           </div>
+           <div class="btn">
+                <a href="#">Follow Us</a>
+            </div>
+        </div>
+    </div>
+  </div>
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+}
+
+nav {
+    display: flex;
+    background-color: azure;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 154, 53);
+}
+
+.hero {
+    background-image: url("https://media.istockphoto.com/id/1465157700/photo/brightly-red-colored-semi-truck-speeding-on-a-two-lane-highway-with-cars-in-background-under.jpg?s=612x612&w=0&k=20&c=cfbbPy2ylvFGRULNLGO_Ucm-C5DsOJMFHiZBdKGsq3c=");
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 36px;
+}
+
+.btn {
+    background: rgb(255, 154, 53);
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+
+.btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: rgb(97, 75, 7);
+}
+
+.wrapper {
+    background: rgb(255, 154, 53);
+    color: #fff;
+    padding: 20px;
+}
+
+.inner-wrapper {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 100%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.desc {
+    padding-left: 20px;
+}
+
+.desc h1 {
+    padding: 20px;
+}
+
+footer {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.inner-footer {
+    font-size: 22px;
+}
+
+.social {
+    font-size: 30px;
+    padding-right: 10px;
+}
+
+.social:hover {
+    color: rgb(255, 154, 53);
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .inner-wrapper {
+        width: 90%;
+    }
+
+    .about {
+        flex-direction: column;
+    }
+
+    .col-6 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about img {
+        width: 100%;
+    }
+}
+body {
+  font-size: 16px;
+}
+
+/* Media query for tablets and larger screens */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+  /* Add other tablet-specific styles here */
+}
+
+/* Media query for desktop screens */
+@media (min-width: 1024px) {
+  body {
+    font-size: 20px;
+  }
+  </style>
+</body>
+</html>
